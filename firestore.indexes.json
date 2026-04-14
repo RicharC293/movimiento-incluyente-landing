@@ -1,0 +1,13 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "buro",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "visible", "order": "ASCENDING" },
+        { "fieldPath": "orden", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

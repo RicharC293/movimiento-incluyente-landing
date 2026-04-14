@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "historia": "Historia",
+    "principios": "Principios",
+    "buro": "Buró",
+    "cantones": "Cantones",
+    "documentos": "Documentos",
+    "galeria": "Galería"
+  },
+  "lang": {
+    "es": "Español",
+    "ki": "Kichwa"
+  },
+  "hero": {
+    "eyebrow": "Frente Político Provincial · Cotopaxi",
+    "title": "Movimiento Incluyente",
+    "cta": "Conoce el movimiento"
+  },
+  "historia": {
+    "label": "Nuestra historia",
+    "title": "Quiénes somos"
+  },
+  "principios": {
+    "label": "Nuestros principios",
+    "title": "Los valores que nos guían"
+  },
+  "buro": {
+    "label": "Buró político",
+    "title": "Equipo de dirección",
+    "verMas": "Ver más miembros del buró",
+    "ocultar": "Ocultar miembros del buró",
+    "masMiembros": "Más miembros del buró"
+  },
+  "cantones": {
+    "label": "Organización territorial",
+    "title": "Coordinadores cantonales",
+    "porDesignar": "Coordinadores por designar",
+    "pendiente": "Por designar",
+    "proximamente": "Próximamente"
+  },
+  "previews": {
+    "regimenTitulo": "Régimen Orgánico",
+    "regimenDesc": "Consulta el reglamento y estructura formal del movimiento.",
+    "regimenBtn": "Ver documento",
+    "galeriaTitulo": "Galería",
+    "galeriaDesc": "Momentos y eventos del Movimiento Incluyente.",
+    "galeriaBtn": "Ver galería"
+  },
+  "footer": {
+    "nav": "Navegación",
+    "docs": "Documentos",
+    "copyright": "Movimiento Incluyente · Frente Político Provincial · Cotopaxi"
+  }
+}

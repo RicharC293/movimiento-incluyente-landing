@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "historia": "Historia",
+    "principios": "Principios",
+    "buro": "Buró",
+    "cantones": "Cantones",
+    "documentos": "Documentos",
+    "galeria": "Galería"
+  },
+  "lang": {
+    "es": "Español",
+    "ki": "Kichwa"
+  },
+  "hero": {
+    "eyebrow": "Frente Político Provincial · Cotopaxi",
+    "title": "Movimiento Incluyente",
+    "cta": "Riqsirishun"
+  },
+  "historia": {
+    "label": "Ñukanchi historia",
+    "title": "Pitaj kanchik"
+  },
+  "principios": {
+    "label": "Ñukanchi principios",
+    "title": "Ñukanchi yuyaykunata pusak"
+  },
+  "buro": {
+    "label": "Buró político",
+    "title": "Pushak kawsaypi",
+    "verMas": "Ashtawan buró miembrokuna rikuchiy",
+    "ocultar": "Pakay buró miembrokuna",
+    "masMiembros": "Ashtawan buró miembrokuna"
+  },
+  "cantones": {
+    "label": "Llaktapi tantanakuy",
+    "title": "Canton coordinadoresnin",
+    "porDesignar": "Coordinadores churanaypaj",
+    "pendiente": "Churanaypaj",
+    "proximamente": "Shamukpi"
+  },
+  "previews": {
+    "regimenTitulo": "Régimen Orgánico",
+    "regimenDesc": "Movimientoj reglamentonta rikuy.",
+    "regimenBtn": "Qillqata rikuy",
+    "galeriaTitulo": "Galería",
+    "galeriaDesc": "Movimiento Incluyentej pachakunata rikuy.",
+    "galeriaBtn": "Galeriyata rikuy"
+  },
+  "footer": {
+    "nav": "Puriyna",
+    "docs": "Qillqakuna",
+    "copyright": "Movimiento Incluyente · Frente Político Provincial · Cotopaxi"
+  }
+}

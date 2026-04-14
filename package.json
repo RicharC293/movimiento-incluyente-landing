@@ -1,0 +1,37 @@
+{
+  "name": "movimiento-incluyente-landing",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "create-admin": "tsx scripts/create-admin.ts",
+    "deploy-rules": "bash scripts/deploy-rules.sh"
+  },
+  "dependencies": {
+    "firebase": "^11.6.0",
+    "firebase-admin": "^13.1.0",
+    "next": "^15.3.0",
+    "next-intl": "^4.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "yet-another-react-lightbox": "^3.21.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.24.0",
+    "eslint-config-next": "^15.3.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3",
+    "tsx": "^4.19.3"
+  }
+}
