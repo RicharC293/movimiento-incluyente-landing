@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { siteGraphSchema, siteUrl } from '@/lib/seo'
 import '../globals.css'
+import { Analytics } from "@vercel/analytics/next"
 
 // ── Textos por idioma ──────────────────────────────────────────────────────
 const META = {
@@ -141,6 +142,7 @@ export default async function LocaleLayout({
           {children}
         </NextIntlClientProvider>
       </body>
+      <Analytics />
     </html>
   )
 }
