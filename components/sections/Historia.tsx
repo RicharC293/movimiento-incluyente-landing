@@ -31,7 +31,7 @@ export default function HistoriaSection({ historia }: { historia: Historia | nul
                 src={historia.imagen}
                 alt={historia.titulo}
                 fill
-                className="object-cover"
+                className="object-fill"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             ) : (
