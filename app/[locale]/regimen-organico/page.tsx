@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { db } from '@/lib/firebase-admin'
 import type { Documento } from '@/lib/types'
 import LangStrip from '@/components/layout/LangStrip'
@@ -5,6 +6,27 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
 export const revalidate = 60
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://incluyente62.org'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const isEs = locale === 'es'
+  const title       = isEs ? 'Régimen Orgánico' : 'Régimen Orgánico — Kamachiy killka'
+  const description = isEs
+    ? 'Consulta el Régimen Orgánico del Movimiento Incluyente Lista 62 de Cotopaxi. Reglamento, estructura interna y normas de funcionamiento.'
+    : 'Movimiento Incluyentej reglamentonta rikuy — kamachiy killka.'
+  return {
+    title,
+    description,
+    alternates: { canonical: `${siteUrl}/${locale}/regimen-organico` },
+    openGraph: { title, description, url: `${siteUrl}/${locale}/regimen-organico`, type: 'website' },
+  }
+}
 
 async function getRegimen(): Promise<Documento | null> {
   try {

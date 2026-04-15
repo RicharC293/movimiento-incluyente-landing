@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { db } from '@/lib/firebase-admin'
 import type { GaleriaItem } from '@/lib/types'
 import LangStrip from '@/components/layout/LangStrip'
@@ -6,6 +7,27 @@ import Footer from '@/components/layout/Footer'
 import GaleriaClient from './GaleriaClient'
 
 export const revalidate = 60
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://incluyente62.org'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const isEs = locale === 'es'
+  const title       = isEs ? 'Galería de fotos' : 'Riksichiy galería'
+  const description = isEs
+    ? 'Imágenes de las actividades, eventos y momentos del Movimiento Incluyente en la provincia de Cotopaxi, Ecuador.'
+    : 'Movimiento Incluyentej ruraykunata Cotopaxi llaktapi rikuy.'
+  return {
+    title,
+    description,
+    alternates: { canonical: `${siteUrl}/${locale}/galeria` },
+    openGraph: { title, description, url: `${siteUrl}/${locale}/galeria`, type: 'website' },
+  }
+}
 
 async function getGaleria(): Promise<GaleriaItem[]> {
   try {

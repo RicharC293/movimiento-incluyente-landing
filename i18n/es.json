@@ -25,7 +25,7 @@
     "title": "Los valores que nos guían"
   },
   "buro": {
-    "label": "Buró político",
+    "label": "Buró Político",
     "title": "Equipo de dirección",
     "verMas": "Ver más miembros del buró",
     "ocultar": "Ocultar miembros del buró",
@@ -38,13 +38,44 @@
     "pendiente": "Por designar",
     "proximamente": "Próximamente"
   },
+  "galeriaPreview": {
+    "eyebrow": "Momentos del movimiento",
+    "title": "Galería de fotos",
+    "subtitle": "Imágenes de nuestras actividades y eventos en la provincia de Cotopaxi.",
+    "verGaleria": "Ver galería completa",
+    "proximamente": "Próximamente",
+    "proximamenteDesc": "Las fotos estarán disponibles muy pronto."
+  },
   "previews": {
+    "eyebrow": "Transparencia y normativa",
+    "title": "Documentos oficiales",
+    "subtitle": "Accede al marco normativo que rige la organización y funcionamiento del Movimiento Incluyente.",
     "regimenTitulo": "Régimen Orgánico",
-    "regimenDesc": "Consulta el reglamento y estructura formal del movimiento.",
+    "regimenDesc": "Consulta el reglamento y estructura formal que guía la organización interna, los derechos y deberes de sus integrantes, y los procesos de toma de decisiones.",
     "regimenBtn": "Ver documento",
-    "galeriaTitulo": "Galería",
-    "galeriaDesc": "Momentos y eventos del Movimiento Incluyente.",
-    "galeriaBtn": "Ver galería"
+    "regimenBadge": "Normativa interna"
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "¿Quieres saber más?",
+    "items": [
+      {
+        "q": "¿Qué es el Movimiento Incluyente?",
+        "a": "El Movimiento Incluyente es el Frente Político Provincial Lista 62 de Cotopaxi, Ecuador, con sede en Latacunga. Fue fundado para representar a todos los cotopaxenses bajo los valores de Trabajo, Honradez e Igualdad, con presencia en los 7 cantones de la provincia."
+      },
+      {
+        "q": "¿Qué es la Lista 62 de Cotopaxi?",
+        "a": "Lista 62 es el número de identificación electoral del Movimiento Incluyente. Participa en elecciones provinciales y cantonales representando a los 7 cantones: Latacunga, Salcedo, Pujilí, Saquisilí, Pangua, La Maná y Sigchos."
+      },
+      {
+        "q": "¿En qué cantones tiene presencia el Movimiento Incluyente?",
+        "a": "El Movimiento Incluyente tiene presencia en los 7 cantones de Cotopaxi: Latacunga (capital provincial), Salcedo, Pujilí, Saquisilí, Pangua, La Maná y Sigchos, con coordinadores territoriales en cada cantón."
+      },
+      {
+        "q": "¿Cuáles son los principios del Movimiento Incluyente?",
+        "a": "El Movimiento Incluyente se guía por los principios de Trabajo, Honradez e Igualdad. Busca una participación política incluyente que represente a todos los sectores de Cotopaxi, incluyendo comunidades indígenas, campesinas y urbanas."
+      }
+    ]
   },
   "footer": {
     "nav": "Navegación",

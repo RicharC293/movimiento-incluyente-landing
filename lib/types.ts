@@ -89,6 +89,7 @@ export interface GaleriaItem {
   descripcion?: string
   orden: number
   fecha: string
+  destacada?: boolean
 }
 
 export interface Documento {

@@ -25,7 +25,7 @@
     "title": "Ñukanchi yuyaykunata pusak"
   },
   "buro": {
-    "label": "Buró político",
+    "label": "Buró Político",
     "title": "Pushak kawsaypi",
     "verMas": "Ashtawan buró miembrokuna rikuchiy",
     "ocultar": "Pakay buró miembrokuna",
@@ -38,13 +38,44 @@
     "pendiente": "Churanaypaj",
     "proximamente": "Shamukpi"
   },
+  "galeriaPreview": {
+    "eyebrow": "Ñukanchi kawsay pachakunata",
+    "title": "Riksichiy galería",
+    "subtitle": "Ñukanchi ruraykunata Cotopaxi llaktapi rikuy.",
+    "verGaleria": "Tukuy galeriyata rikuy",
+    "proximamente": "Shamukpi",
+    "proximamenteDesc": "Riksichiy pachakunata ashtawan shamukpi churashun."
+  },
   "previews": {
+    "eyebrow": "Killkakuna achka",
+    "title": "Killkakunata rikuy",
+    "subtitle": "Movimientoj tantanakuy kamachiykunata rikuy.",
     "regimenTitulo": "Régimen Orgánico",
-    "regimenDesc": "Movimientoj reglamentonta rikuy.",
+    "regimenDesc": "Movimientoj reglamentonta rikuy, ruraykunata, allí kawsayta.",
     "regimenBtn": "Qillqata rikuy",
-    "galeriaTitulo": "Galería",
-    "galeriaDesc": "Movimiento Incluyentej pachakunata rikuy.",
-    "galeriaBtn": "Galeriyata rikuy"
+    "regimenBadge": "Kamachiy killka"
+  },
+  "faq": {
+    "eyebrow": "Tapukuna",
+    "title": "Ashtawan yachankichu?",
+    "items": [
+      {
+        "q": "¿Ima kan Movimiento Incluyente?",
+        "a": "Movimiento Incluyente kan Lista 62, Cotopaxi llaktapi kawsay tukuy runakuna. Latacunga llaktapi tiyak. Ruranakuy, Allichay, Tukuykunapaj nishka yuyaykuna."
+      },
+      {
+        "q": "¿Ima kan Lista 62 Cotopaxi?",
+        "a": "Lista 62 kan Movimiento Incluyentej ayllu sutipi churashka yupay. Cotopaxi llaktapi 7 cantonespi ruranakuy — Latacunga, Salcedo, Pujilí, Saquisilí, Pangua, La Maná, Sigchos."
+      },
+      {
+        "q": "¿Maypi tiyak Movimiento Incluyente?",
+        "a": "Movimiento Incluyente Cotopaxi llaktapi 7 cantones ukupi tiyak: Latacunga, Salcedo, Pujilí, Saquisilí, Pangua, La Maná, Sigchos."
+      },
+      {
+        "q": "¿Movimiento Incluyentej yuyaykunata?",
+        "a": "Movimiento Incluyente Ruranakuy, Allichay, Tukuykunapaj nishka yuyaykuna katishpa purink. Cotopaxi llaktapi tukuy runakunata, kichwakuna, campesinokunata, llaktapipash representank."
+      }
+    ]
   },
   "footer": {
     "nav": "Puriyna",

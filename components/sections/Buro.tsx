@@ -31,10 +31,10 @@ export default function BuroSection({ members }: { members: BuroMember[] }) {
           className="text-[11px] font-bold uppercase tracking-[2.5px] mb-3"
           style={{ color: '#A0359A' }}
         >
-          Dirección provincial
+          Dirección Provincial
         </p>
         <h2 className="text-[28px] font-extrabold mb-3 leading-tight" style={{ color: '#1e0040' }}>
-          Buró político
+          Buró Político
         </h2>
         <p className="text-[15px] mb-8 max-w-xl" style={{ color: '#6a5080', lineHeight: '1.6' }}>
           Conoce al equipo que lidera el Movimiento Incluyente en la provincia de Cotopaxi.
