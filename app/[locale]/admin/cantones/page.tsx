@@ -65,14 +65,17 @@ export default function AdminCantones() {
     setSaving(true)
     setMsg('')
     try {
+      // Construir coord omitiendo campos vacíos (Firestore rechaza undefined/vacíos)
       const coord = form.nombre.trim()
-        ? {
-            nombre: form.nombre,
-            profesion: form.profesion,
-            frase: form.frase,
-            iniciales: form.iniciales,
-            ...(form.foto ? { foto: form.foto } : {}),
-          }
+        ? Object.fromEntries(
+            Object.entries({
+              nombre:    form.nombre,
+              profesion: form.profesion,
+              frase:     form.frase,
+              iniciales: form.iniciales,
+              foto:      form.foto || undefined,
+            }).filter(([, v]) => v !== undefined && v !== '')
+          )
         : null
       await setDoc(doc(clientDb, 'cantones', canton.id), {
         nombre: canton.nombre,

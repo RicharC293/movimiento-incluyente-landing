@@ -70,18 +70,23 @@ export default function AdminBuroForm({ params }: { params: Promise<{ id: string
     setSaving(true)
     setMsg('')
     try {
+      // Firestore rechaza campos con valor `undefined` — los eliminamos antes de guardar
+      const clean = Object.fromEntries(
+        Object.entries(form).filter(([, v]) => v !== undefined && v !== '')
+      ) as Omit<BuroMember, 'id'>
+
       if (form.tipo === 'fijo') {
-        // Para fijos: usar rolFijo como doc id para lookup directo
         const docId = form.rolFijo ?? id
-        await setDoc(doc(clientDb, 'buro', docId), { ...form })
+        await setDoc(doc(clientDb, 'buro', docId), clean)
       } else if (isNew) {
-        await addDoc(collection(clientDb, 'buro'), form)
+        await addDoc(collection(clientDb, 'buro'), clean)
       } else {
-        await setDoc(doc(clientDb, 'buro', id), form)
+        await setDoc(doc(clientDb, 'buro', id), clean)
       }
       setMsg('Guardado correctamente.')
       setTimeout(() => router.push(`/${locale}/admin/buro`), 800)
-    } catch {
+    } catch (err) {
+      console.error('Error guardando buró:', err)
       setMsg('Error al guardar.')
     } finally {
       setSaving(false)
