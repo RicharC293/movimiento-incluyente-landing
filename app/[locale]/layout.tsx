@@ -96,6 +96,23 @@ export async function generateMetadata({
       apple:     '/favicon.ico',
     },
 
+    // ── Theme color — elimina los bordes blancos en Safari/Chrome móvil ──
+    themeColor: [
+      { media: '(prefers-color-scheme: light)', color: '#A0359A' },
+      { media: '(prefers-color-scheme: dark)',  color: '#3D1066' },
+    ],
+
+    // ── PWA / Web App ──
+    manifest: '/manifest.webmanifest',
+    appleWebApp: {
+      capable:           true,
+      statusBarStyle:    'black-translucent',
+      title:             'Incluyente 62',
+    },
+    formatDetection: {
+      telephone: false,
+    },
+
     // ── Keywords — incluye todas las variantes de búsqueda objetivo ──
     keywords: [
       'Movimiento Incluyente',
