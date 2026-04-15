@@ -63,9 +63,9 @@ export const organizationSchema = {
     'Participación ciudadana',
     'Movimiento político Ecuador',
   ],
-  // Agrega aquí redes sociales cuando estén disponibles:
-  // sameAs: ['https://www.facebook.com/...', 'https://www.instagram.com/...'],
-  sameAs: [],
+  sameAs: [
+    'https://www.facebook.com/profile.php?id=61560352261121',
+  ],
 }
 
 // ── 2. WebSite ─────────────────────────────────────────────────────────────
