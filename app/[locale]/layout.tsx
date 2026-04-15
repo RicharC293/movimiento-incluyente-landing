@@ -96,12 +96,6 @@ export async function generateMetadata({
       apple:     '/favicon.ico',
     },
 
-    // ── Theme color — elimina los bordes blancos en Safari/Chrome móvil ──
-    themeColor: [
-      { media: '(prefers-color-scheme: light)', color: '#A0359A' },
-      { media: '(prefers-color-scheme: dark)',  color: '#3D1066' },
-    ],
-
     // ── PWA / Web App ──
     manifest: '/manifest.webmanifest',
     appleWebApp: {
@@ -148,6 +142,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale === 'ki' ? 'qu' : 'es'}>
       <head>
+        {/* theme-color — controla la barra superior/inferior en Safari iOS y Chrome Android */}
+        <meta name="theme-color" content="#A0359A" />
+        <meta name="msapplication-navbutton-color" content="#A0359A" />
         {/* Organization + WebSite en @graph — base para el Knowledge Panel de Google */}
         <script
           type="application/ld+json"
